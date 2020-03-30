@@ -10,6 +10,10 @@ public enum CalculatriceRPN {
 				if(expression.equals("exit")) {
 					break;
 				}
+				else if(expression.equals("undo")) {
+					this.getMoteurRPN().Pop();
+					System.out.println(this.getMoteurRPN().getStack());
+				}
 				else {
 						if (Pattern.matches("[\\+\\-\\*\\/]",expression)) {
 							if (this.getMoteurRPN().getStack().size() < 2) {
