@@ -45,7 +45,7 @@ public enum CalculatriceRPN {
 							break;
 				}
 				expression = this.getSaisieRPN().Interaction();
-				System.out.println(this.getMoteurRPN().getStack());
+				//System.out.println(this.getMoteurRPN().getStack());
 			}
 		}
 	};
